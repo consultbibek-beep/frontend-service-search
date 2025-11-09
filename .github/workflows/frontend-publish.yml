@@ -37,7 +37,7 @@ jobs:
           push: true
           # FIX 2: Enable Multi-Platform Build (Crucial for Mac/ARM compatibility)
           platforms: linux/amd64,linux/arm64 
-          tags: consultbibek/mini-gen-frontend:${{ env.SHORT_SHA }}
+          tags: consultbibek/mini-gen-frontend-search:${{ env.SHORT_SHA }}
           # FIX 3: Re-enable resilient registry caching for faster, more stable builds
-          cache-from: type=registry,ref=consultbibek/mini-gen-frontend:buildcache
-          cache-to: type=registry,ref=consultbibek/mini-gen-frontend:buildcache,mode=max
+          cache-from: type=registry,ref=consultbibek/mini-gen-frontend-search:buildcache
+          cache-to: type=registry,ref=consultbibek/mini-gen-frontend-search:buildcache,mode=max
