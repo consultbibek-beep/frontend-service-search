@@ -29,7 +29,7 @@ HTML_PAGE = """
     <h1>mini-gen — Electoral List RAG Search</h1>
     <form method="post" action="/">
       <label for="prompt">Search the Electoral List (PDF):</label><br/>
-      <textarea id="prompt" name="prompt" placeholder="Search for a name, address, or specific detail in the electoral roll...">{{ prompt if prompt is not None else '' }}</textarea><br/><br/>
+      <textarea id="prompt" name="prompt" placeholder="Search for a name, address, or specific detail in the electoral roll...">{{ prompt if prompt is not none else '' }}</textarea><br/><br/>
       <button type="submit">Search Document</button>
     </form>
 
